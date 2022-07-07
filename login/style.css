@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+:root {
+    --lavanderweb: #d8dce9;
+    --china: #e56399;
+    --magenta: #de3f82;
+    --darkliver: #5a464c;
+    --lemon: #fffacc;
+    --teal: #468C98;
+}
+
+body{
+    background-color: var(--teal);
+    color: var(--darkliver);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container h1 {
+    color: var(--lemon);
+}
+
+.login-container {
+    background: var(--lavanderweb);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    gap: 50px;
+}
+
+.login-container a {
+    color: var(--darkliver);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+form input {
+    margin-bottom: 10px;
+    height: 40px;
+    border: 2px solid var(--darkliver);
+    padding: 0 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.btn {
+    background: var(--lemon);
+    color: var(--darkliver);
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+}
+
+.login-img {
+    display: none;
+}
+
+.login-img img {
+    width: 100%;
+}
+
+.home-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.home-btn img {
+    width: 100px;
+}
+
+@media (min-width: 1024px) {
+
+    .login-container {
+        padding-bottom: 0;
+    }
+
+    .login-img {
+        display: flex;
+    }
+
+}
